@@ -2,14 +2,12 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      keyframes: {
-        "logo-spin": {
-          from: { transform: "rotate(0deg)" },
-          to: { transform: "rotate(360deg)" },
-        },
-      },
-      animation: {
-        "logo-spin": "logo-spin 20s linear infinite",
+      colors: {
+        'background': '#FEF9E1',
+        'brown-text': '#733709',
+        'main': '#E5D0AC',
+        'contrast': '#635C52',
+        'logo': '#3D5A80',
       },
     },
   },
