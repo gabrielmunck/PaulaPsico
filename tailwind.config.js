@@ -9,6 +9,9 @@ module.exports = {
         'contrast': '#635C52',
         'logo': '#3D5A80',
       },
+      fontFamily: {
+        'lato': ['Lato', 'sans-serif'],
+      },
     },
   },
   plugins: [],
