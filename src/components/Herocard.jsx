@@ -1,4 +1,4 @@
-
+import paulaPsico from "../assets/PaulaPsico.png";
 
 
 function Herocard() {
@@ -22,7 +22,7 @@ function Herocard() {
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="w-48 h-48 md:w-[500px] md:h-[500px] overflow-hidden rounded-full border-2 border-main">
             <img
-              src="PaulaPsico.png"
+              src={paulaPsico}
               alt="Foto da Psicologa Paula"
               className="w-full h-full object-cover"
             />
