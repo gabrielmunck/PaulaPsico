@@ -3,12 +3,12 @@ import paulaPsico from "../assets/PaulaPsico.png";
 
 function Herocard() {
   return (
-    <div className="">
-      <div className="flex flex-col md:flex-row items-center gap-4 px-12 md:px-32 py-10 z-20">
+    <div className="w-full">
+      <div className="flex flex-col md:flex-row items-center gap-4 px-12 lg:px-32 py-10 z-20">
         
         <div className="w-full md:w-1/2 mt-4 md:mt-0">
           <h2 className="text-2xl font-bold text-main mb-3">Paula -</h2>
-          <p className="font-lato font-bold tracking-wider text-xl md:text-5xl md:px-10 text-brown-text text-center">
+          <p className="font-lato font-bold tracking-wider text-xl md:text-5xl lg:px-10 text-brown-text text-center">
             “Te ajudo a encontrar caminhos para superar suas dores e construir
             uma vida com propósito e bem-estar.”
           </p>
