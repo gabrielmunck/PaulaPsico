@@ -8,7 +8,7 @@ function Publi() {
         <img
           src={tree}
           alt="Árvore"
-          className="absolute -left-[180px] md:-left-[250px] top-10 md:top-0 transform -translate-y-1/2 w-auto h-full opacity-80"
+          className="absolute -left-[150px] md:-left-[250px] top-64 md:top-0 transform -translate-y-1/2 w-auto h-full opacity-80"
         />
       </div>
 

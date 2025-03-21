@@ -8,7 +8,7 @@ function Herocard() {
         
         <div className="w-full md:w-1/2 mt-4 md:mt-0">
           <h2 className="text-2xl font-bold text-main mb-3">Paula -</h2>
-          <p className="font-lato font-bold tracking-wider text-xl md:text-5xl lg:px-10 text-brown-text text-center">
+          <p className="font-lato font-bold tracking-wider text-xl md:text-2xl xl:text-5xl lg:px-10 text-brown-text text-center">
             “Te ajudo a encontrar caminhos para superar suas dores e construir
             uma vida com propósito e bem-estar.”
           </p>
