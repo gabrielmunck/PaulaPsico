@@ -2,6 +2,7 @@ import "./App.css";
 import Herocard from "./components/Herocard";
 import Publi from "./components/Publi";
 import About from "./components/About";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Publi />
       </div>
       <About />
+      <Services />
     </div>
   );
 }
