@@ -52,10 +52,10 @@ function Services() {
         {services.map((service) => (
           <div
             key={service.id}
-            className="flex flex-col justify-center md:flex-row px-4 md:px-32 overflow-hidden hover:bg-white transition-colors duration-300"
+            className="flex flex-col justify-center lg:flex-row px-4 md:px-32 overflow-hidden hover:bg-white transition-colors duration-300"
           >
             
-            <div className="md:w-1/3 h-72 py-3">
+            <div className="lg:w-1/3 h-72 py-3">
               <img
                 src={service.image}
                 alt={service.title}
@@ -64,11 +64,11 @@ function Services() {
             </div>
 
             
-            <div className="md:w-2/3 max-w-[750px] p-6 flex flex-col justify-center">
-              <h2 className="font-lato text-4xl text-contrast font-bold mb-3">
+            <div className="lg:w-2/3 max-w-[750px] p-6 flex flex-col justify-center">
+              <h2 className="font-lato text-2xl lg:text-4xl text-contrast font-bold mb-3">
                 {service.title}
               </h2>
-              <p className="font-lato font-light text-gray-700">
+              <p className="font-lato font-light text-md md:text-lg text-gray-700">
                 {service.description}
               </p>
             </div>
