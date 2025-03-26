@@ -1,5 +1,5 @@
 import tree from "../assets/tree.svg";
-import whatsapp from "../assets/whatsapp.svg";
+import WhatsButton from "./WhatsButton";
 
 function Publi() {
   return (
@@ -20,18 +20,7 @@ function Publi() {
           <p className="text-contrast font-lato text-center font-extralight text-lg mb-6">
             Tenha sua consulta marcada em apenas alguns cliques{" "}
           </p>
-          <div className="flex md:p-8 mb-6">
-            <button className="flex items-center bg-emerald-500 px-5 md:px-10 py-4 md:py-5 rounded-full hover:bg-emerald-700 transition-colors">
-              <img
-                src={whatsapp}
-                alt="whatsapp icon"
-                className="w-8 h-8 mr-4"
-              />
-              <p className="text-white font-lato text-center text-sm md:text-lg font-bold">
-                AGENDE UMA CONSULTA
-              </p>
-            </button>
-          </div>
+          <WhatsButton />
           <p className="text-contrast tracking-wide font-lato text-center font-bold text-lg mb-8">
             CONSULTAS PRESENCIAIS E ONLINE
           </p>
