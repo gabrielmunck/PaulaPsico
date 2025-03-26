@@ -3,6 +3,7 @@ import Herocard from "./components/Herocard";
 import Publi from "./components/Publi";
 import About from "./components/About";
 import Services from "./components/Services";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       </div>
       <About />
       <Services />
+      <Faq />
     </div>
   );
 }
