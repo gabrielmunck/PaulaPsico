@@ -31,7 +31,7 @@ function Faq() {
             Psicologia.
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center w-full rounded-[80px] border-4 border-main p-8">
+        <div className="flex flex-col justify-center items-center w-full rounded-[80px] border-4 border-main p-8 mb-12">
           <div className="flex justify-between space-x-5">
             <img src={zoom} alt="Zoom Logo" className="w-8 h-8" />
             <p className="text-contrast font-lato text-center font-bold text-xl lg:text-2xl mb-2">
@@ -67,7 +67,7 @@ function Faq() {
             <p className="flex items-center"><span className="text-main mr-2">✓</span> Dependência química</p>
             <p className="flex items-center"><span className="text-main mr-2">✓</span> Dificuldades no relacionamento</p>
             <p className="flex items-center"><span className="text-main mr-2">✓</span> Transtorno de personalidade</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Perda de peso</p>
+            <p className="flex items-center mb-4"><span className="text-main mr-2">✓</span> Perda de peso</p>
             <WhatsButton/>
           </div>
           
