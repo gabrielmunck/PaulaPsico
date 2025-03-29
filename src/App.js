@@ -4,6 +4,7 @@ import Publi from "./components/Publi";
 import About from "./components/About";
 import Services from "./components/Services";
 import Faq from "./components/Faq";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Services />
       <Faq />
+      <Footer />
     </div>
   );
 }
