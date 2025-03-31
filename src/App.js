@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Faq from "./components/Faq";
 import Sos from "./components/Sos";
 import Crp from "./components/Crp";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Faq />
       <Sos />
       <Crp />
+      <Footer />
     </div>
   );
 }
