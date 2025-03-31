@@ -24,12 +24,12 @@ function Header() {
             <p className="text-logo font-lato font-light text-md">Psicologia Especializada</p>
           </div>
         </div>
-        <div className="flex items-center justify-center">
-          <a href="#home" onClick={(e) => scrollToSection('home', e)}>Home</a>
-          <a href="#contato" onClick={(e) => scrollToSection('contato', e)}>Contato</a>
-          <a href="#quem-sou" onClick={(e) => scrollToSection('quem-sou', e)}>Quem Sou</a>
-          <a href="#servicos" onClick={(e) => scrollToSection('servicos', e)}>Serviços</a>
-          <a href="#faq" onClick={(e) => scrollToSection('faq', e)}>Faq</a>
+        <div className="flex items-center justify-center space-x-10 px-12 font-lato font-light text-lg">
+          <a href="#home" className="hover:text-logo hover:underline hover:bg-slate-950 h-full transition-colors duration-300 " onClick={(e) => scrollToSection('home', e)}>Home</a>
+          <a href="#contato" className="hover:text-logo hover:underline transition-colors duration-300" onClick={(e) => scrollToSection('contato', e)}>Contato</a>
+          <a href="#quem-sou" className="hover:text-logo hover:underline transition-colors duration-300" onClick={(e) => scrollToSection('quem-sou', e)}>Quem Sou</a>
+          <a href="#servicos" className="hover:text-logo hover:underline transition-colors duration-300" onClick={(e) => scrollToSection('servicos', e)}>Serviços</a>
+          <a href="#faq" className="hover:text-logo hover:underline transition-colors duration-300" onClick={(e) => scrollToSection('faq', e)}>Faq</a>
         </div>
       </div>
     </div>
