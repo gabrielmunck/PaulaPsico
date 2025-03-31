@@ -1,4 +1,5 @@
 import "./App.css";
+import Header from "./components/Header";
 import Herocard from "./components/Herocard";
 import Publi from "./components/Publi";
 import About from "./components/About";
@@ -11,6 +12,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="min-h-screen w-full bg-background flex flex-col items-center justify-center">
+      <Header />
       <div className="w-full max-w-[1600px]">
         <Herocard />
         <Publi />

@@ -3,7 +3,7 @@ import paulaPsico from "../assets/PaulaPsico.png";
 
 function Herocard() {
   return (
-    <div className="w-full">
+    <div id='home' className="w-full">
       <div className="flex flex-col md:flex-row items-center gap-4 px-12 lg:px-32 py-10 z-20">
         
         <div className="w-full md:w-1/2 mt-4 md:mt-0">

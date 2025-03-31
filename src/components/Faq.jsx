@@ -4,7 +4,7 @@ import WhatsButton from "./WhatsButton";
 
 function Faq() {
   return (
-    <div className="flex flex-col lg:flex-row justify-center lg:space-x-20 lg:max-w-7xl w-full bg-background p-4 lg:p-16">
+    <div id="faq" className="flex flex-col lg:flex-row justify-center lg:space-x-20 lg:max-w-7xl w-full bg-background p-4 lg:p-16">
       <div className="w-full lg:w-1/2 max-w-5xl z-10">
         <div className="flex flex-col justify-center items-center w-full rounded-[80px] border-4 border-main p-8 mb-12">
           <p className="text-contrast font-lato text-center font-bold text-xl lg:text-2xl mb-2">
