@@ -27,7 +27,7 @@ function Contact() {
   };
 
   return (
-    <div className="w-full flex items-center justify-center bg-main text-brown-text py-16">
+    <div id="contato" className="w-full flex items-center justify-center bg-main text-brown-text py-16">
       <div className="max-w-[1600px] px-4 lg:px-32">
         <div className="flex flex-col md:flex-row gap-10 items-center">
           {/* Left side - Text content */}
