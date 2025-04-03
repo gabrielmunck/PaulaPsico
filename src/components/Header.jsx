@@ -1,7 +1,9 @@
 import logo from "../assets/psicoLogo.svg";
 
 function Header() {
-  // Function to handle smooth scrolling
+
+
+
   const scrollToSection = (sectionId, event) => {
     event.preventDefault();
     const section = document.getElementById(sectionId);
@@ -13,6 +15,8 @@ function Header() {
       });
     }
   };
+
+  
 
   return (
     <div className="w-full h-[100px] bg-main flex items-center justify-center">

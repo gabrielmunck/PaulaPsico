@@ -7,7 +7,7 @@ function Sos() {
             <p className="font-bold mr-2">Atenção:</p> Este site não oferece
             atendimento imediato a pessoas em crise suicida.
           </h4>
-          <h3 className="w-full font-lato font-bold text-center text-xl md:text-2xl mb-8">
+          <h3 className="w-full font-lato font-bold text-center text-xl md:text-2xl mb-8 tracking-wider">
             Em caso de crise ligue para o CVV - 188
           </h3>
           <p className="w-full font-lato font-light text-center text-lg md:text-xl mb-8 md:px-10">
