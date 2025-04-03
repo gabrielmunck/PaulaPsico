@@ -48,7 +48,6 @@ function Header() {
   return (
     <div className="w-full h-auto min-h-[70px] md:h-[100px] bg-main flex items-center justify-center">
       <div className="w-full max-w-[1600px] flex items-center justify-between px-4 py-3 md:py-0">
-        {/* Logo section - same for mobile and desktop */}
         <div className="flex items-center">
           <img
             src={logo}
@@ -105,7 +104,7 @@ function Header() {
         </button>
 
         {/* Desktop navigation */}
-        <div className="hidden md:flex items-center justify-center space-x-10 px-12 font-lato font-light text-lg">
+        <div className="hidden md:flex items-center justify-center space-x-10 px-12 font-lato font-light sm:text-md lg:text-lg">
           {navLinks.map((link) => (
             <a
               key={link.id}
