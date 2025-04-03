@@ -5,6 +5,7 @@ import Publi from "./components/Publi";
 import About from "./components/About";
 import Services from "./components/Services";
 import Faq from "./components/Faq";
+import Contact from "./components/Contact";
 import Sos from "./components/Sos";
 import Crp from "./components/Crp";
 import Footer from "./components/Footer";
@@ -20,6 +21,7 @@ function App() {
       <About />
       <Services />
       <Faq />
+      <Contact />
       <Sos />
       <Crp />
       <Footer />
