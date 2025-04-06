@@ -55,7 +55,7 @@ function Services() {
             className="flex flex-col justify-center lg:flex-row px-4 md:px-32 overflow-hidden hover:bg-white transition-colors duration-300"
           >
             
-            <div className="lg:w-1/3 h-72 py-3">
+            <div className="lg:w-1/3 h-60 px-10 py-3">
               <img
                 src={service.image}
                 alt={service.title}
