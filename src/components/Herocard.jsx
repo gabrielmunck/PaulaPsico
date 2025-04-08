@@ -2,10 +2,10 @@ import paulaPsico from "../assets/PaulaPsico.png";
 
 function Herocard() {
 
-  const scrollToPubli = () => {
-    const publiSection = document.getElementById('quem-sou');
-    if (publiSection) {
-      publiSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollTo = () => {
+    const section = document.getElementById('quem-sou');
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -20,7 +20,7 @@ function Herocard() {
             </p>
             <div className="flex justify-center mt-2">
               <button
-                onClick={scrollToPubli}
+                onClick={scrollTo}
                 className="w-2/3 md:w-1/2 mt-4 bg-main text-white shadow-md px-6 py-2 rounded-md hover:bg-opacity-90 transition-all"
               >
                 Saiba mais
