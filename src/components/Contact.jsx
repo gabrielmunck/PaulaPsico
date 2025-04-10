@@ -53,7 +53,7 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-brown-text">Email</h3>
-                  <p className="text-contrast">contato@paulapsico.com</p>
+                  <p className="text-contrast">paulamie30@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -62,7 +62,7 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-brown-text">Telefone</h3>
-                  <p className="text-contrast">(00) 12345-6789</p>
+                  <p className="text-contrast">(11) 12345-6789</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -71,7 +71,7 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-brown-text">Instagram</h3>
-                  <p className="text-contrast">@paulapsico</p>
+                  <p className="text-contrast">@paulamie.psi</p>
                 </div>
               </div>
             </div>
