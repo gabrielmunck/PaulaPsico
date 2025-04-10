@@ -1,29 +1,35 @@
-import { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import instagram from "../assets/instagram.svg";
 import whatsapp from "../assets/whatsContact.svg";
 import email from "../assets/gmail.svg";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    nome: "",
-    email: "",
-    mensagem: "",
-  });
+  const form = useRef(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevState) => ({
-      ...prevState,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
-    // Reset form after submission
-    setFormData({ nome: "", email: "", mensagem: "" });
+
+    if (!form.current) return;
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY 
+      )
+      .then(
+        (result) => {
+          console.log("Mensagem enviada com sucesso ", result.text);
+          alert("✅ Mensagem enviada com sucesso! ✅");
+          form.current?.reset();
+        },
+        (error) => {
+          console.error("Erro ao enviar", error.text);
+          alert("❌ Erro ao enviar mensagem. Tente novamente. ❌");
+        }
+      );
   };
 
   return (
@@ -73,7 +79,7 @@ function Contact() {
 
           {/* Right side - Form */}
           <div className="w-full md:w-1/2 bg-background p-8 rounded-lg shadow-lg">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form ref={form} onSubmit={sendEmail} className="space-y-6">
               <div>
                 <label
                   htmlFor="nome"
@@ -83,12 +89,10 @@ function Contact() {
                 </label>
                 <input
                   type="text"
-                  id="nome"
-                  name="nome"
-                  value={formData.nome}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-main rounded-md focus:outline-none focus:ring-2 focus:ring-logo focus:border-transparent"
+                  name="from_name"
+                  placeholder="Seu nome"
                   required
+                  className="w-full px-4 py-2 border border-main rounded-md focus:outline-none focus:ring-2 focus:ring-logo focus:border-transparent"
                 />
               </div>
 
@@ -101,10 +105,8 @@ function Contact() {
                 </label>
                 <input
                   type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  name="reply_to"
+                  placeholder="Seu e-mail"
                   className="w-full px-4 py-2 border border-main rounded-md focus:outline-none focus:ring-2 focus:ring-logo focus:border-transparent"
                   required
                 />
@@ -118,10 +120,8 @@ function Contact() {
                   Mensagem
                 </label>
                 <textarea
-                  id="mensagem"
-                  name="mensagem"
-                  value={formData.mensagem}
-                  onChange={handleChange}
+                  name="message"
+                  placeholder="Escreva sua mensagem"
                   rows="5"
                   className="w-full px-4 py-2 border border-main rounded-md focus:outline-none focus:ring-2 focus:ring-logo focus:border-transparent"
                   required
