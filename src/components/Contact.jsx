@@ -62,7 +62,7 @@ function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-brown-text">Telefone</h3>
-                  <p className="text-contrast">(11) 12345-6789</p>
+                  <p className="text-contrast">(11) 975066572</p>
                 </div>
               </div>
               <div className="flex items-center">

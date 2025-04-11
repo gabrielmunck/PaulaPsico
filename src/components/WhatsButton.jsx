@@ -6,7 +6,7 @@ function WhatsButton() {
 
   const handleWhatsAppClick = () => {
     
-    const phoneNumber = "5511999999999"; 
+    const phoneNumber = "5511975066572"; 
     const message = "Olá! Gostaria de agendar uma consulta.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     
