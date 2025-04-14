@@ -82,6 +82,7 @@ function Contact() {
                 href="https://www.instagram.com/paulamie.psi"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Navegar para o perfil do instagram da psicóloga Paula"
                 className="flex items-center transition duration-300 hover:bg-opacity-10 hover:bg-contrast p-2 rounded-lg cursor-pointer"
               >
                 <div className="p-3 rounded-full text-white mr-4">

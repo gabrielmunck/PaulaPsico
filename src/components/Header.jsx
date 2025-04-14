@@ -68,7 +68,7 @@ function Header() {
         <button
           className="md:hidden text-logo p-2"
           onClick={toggleMenu}
-          aria-label="Toggle menu"
+          aria-label="Abrir menu de navegação"
         >
           {isMenuOpen ? (
             <svg
