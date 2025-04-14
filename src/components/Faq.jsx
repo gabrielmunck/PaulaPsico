@@ -33,11 +33,11 @@ function Faq() {
         </div>
         <div className="flex flex-col justify-center items-center w-full rounded-[80px] border-4 border-main p-8 mb-12">
           <div className="flex justify-between space-x-5">
-            <img src={zoom} alt="Zoom Logo" className="w-8 h-8" />
+            <img src={zoom} alt="Zoom Logo" className="w-8 h-8" loading="lazy" />
             <p className="text-contrast font-lato text-center font-bold text-xl lg:text-2xl mb-2">
               Plataforma das Sessões
             </p>
-            <img src={googlemeet} alt="google meet logo" className="w-8 h-8" />
+            <img src={googlemeet} alt="google meet logo" className="w-8 h-8" loading="lazy"/>
           </div>
           <p className="tracking-tight leading-6 text-contrast font-lato text-justify font-extralight text-lg p-1 lg:px-8">
             Você pode escolher entre as principais ferramentas de videochamada

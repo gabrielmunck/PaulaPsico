@@ -52,7 +52,7 @@ function Contact() {
             <div className="space-y-4">
               <div className="flex items-center transition duration-300 hover:bg-opacity-10 hover:bg-contrast p-2 rounded-lg">
                 <div className="p-3 rounded-full text-white mr-4">
-                  <img src={email} alt="Email" className="h-6 w-6" />
+                  <img src={email} alt="Email" className="h-6 w-6" loading="lazy"/>
                 </div>
                 <div>
                   <h3 className="font-medium text-brown-text">Email</h3>
@@ -61,7 +61,7 @@ function Contact() {
               </div>
               <div className="flex items-center transition duration-300 hover:bg-opacity-10 hover:bg-contrast p-2 rounded-lg">
                 <div className="p-3 rounded-full text-white mr-4">
-                  <img src={whatsapp} alt="WhatsApp" className="h-6 w-6" />
+                  <img src={whatsapp} alt="WhatsApp" className="h-6 w-6" loading="lazy"/>
                 </div>
                 <div>
                   <h3 className="font-medium text-brown-text">Telefone</h3>
@@ -75,7 +75,7 @@ function Contact() {
                 className="flex items-center transition duration-300 hover:bg-opacity-10 hover:bg-contrast p-2 rounded-lg cursor-pointer"
               >
                 <div className="p-3 rounded-full text-white mr-4">
-                  <img src={instagram} alt="Instagram" className="h-6 w-6" />
+                  <img src={instagram} alt="Instagram" className="h-6 w-6" loading="lazy"/>
                 </div>
                 <div>
                   <h3 className="font-medium text-brown-text">Instagram</h3>

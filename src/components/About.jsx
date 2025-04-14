@@ -17,6 +17,7 @@ function About() {
             src={PaulaPsico}
             alt="Imagem da Psicologa Paula"
             className="w-32 h-32 rounded-full mb-4"
+            loading="lazy"
           />
           <h3 className="font-lato font-light text-2xl border-b-2 border-logo pb-1 mb-4 ">
             Paula Mie Buno Hiratsuka

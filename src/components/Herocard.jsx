@@ -34,6 +34,7 @@ function Herocard() {
                 src={paulaPsico}
                 alt="Foto da Psicologa Paula"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
