@@ -17,7 +17,7 @@ function Contact() {
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_EMAILJS_PUBLIC_KEY 
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -33,7 +33,10 @@ function Contact() {
   };
 
   return (
-    <div id="contato" className="w-full flex items-center justify-center bg-main text-brown-text py-16">
+    <div
+      id="contato"
+      className="w-full flex items-center justify-center bg-main text-brown-text py-16"
+    >
       <div className="max-w-[1600px] px-4 lg:px-32">
         <div className="flex flex-col md:flex-row gap-10 items-center">
           {/* Left side - Text content */}
@@ -47,7 +50,7 @@ function Contact() {
               agendar sua sessão, entre em contato.
             </p>
             <div className="space-y-4">
-              <div className="flex items-center">
+              <div className="flex items-center transition duration-300 hover:bg-opacity-10 hover:bg-contrast p-2 rounded-lg">
                 <div className="p-3 rounded-full text-white mr-4">
                   <img src={email} alt="Email" className="h-6 w-6" />
                 </div>
@@ -56,7 +59,7 @@ function Contact() {
                   <p className="text-contrast">paulamie30@gmail.com</p>
                 </div>
               </div>
-              <div className="flex items-center">
+              <div className="flex items-center transition duration-300 hover:bg-opacity-10 hover:bg-contrast p-2 rounded-lg">
                 <div className="p-3 rounded-full text-white mr-4">
                   <img src={whatsapp} alt="WhatsApp" className="h-6 w-6" />
                 </div>
@@ -65,7 +68,12 @@ function Contact() {
                   <p className="text-contrast">(11) 975066572</p>
                 </div>
               </div>
-              <div className="flex items-center">
+              <a
+                href="https://www.instagram.com/paulamie.psi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center transition duration-300 hover:bg-opacity-10 hover:bg-contrast p-2 rounded-lg cursor-pointer"
+              >
                 <div className="p-3 rounded-full text-white mr-4">
                   <img src={instagram} alt="Instagram" className="h-6 w-6" />
                 </div>
@@ -73,7 +81,7 @@ function Contact() {
                   <h3 className="font-medium text-brown-text">Instagram</h3>
                   <p className="text-contrast">@paulamie.psi</p>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
