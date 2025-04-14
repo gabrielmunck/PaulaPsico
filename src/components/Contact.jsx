@@ -52,7 +52,12 @@ function Contact() {
             <div className="space-y-4">
               <div className="flex items-center transition duration-300 hover:bg-opacity-10 hover:bg-contrast p-2 rounded-lg">
                 <div className="p-3 rounded-full text-white mr-4">
-                  <img src={email} alt="Email" className="h-6 w-6" loading="lazy"/>
+                  <img
+                    src={email}
+                    alt="Email"
+                    className="h-6 w-6"
+                    loading="lazy"
+                  />
                 </div>
                 <div>
                   <h3 className="font-medium text-brown-text">Email</h3>
@@ -61,7 +66,12 @@ function Contact() {
               </div>
               <div className="flex items-center transition duration-300 hover:bg-opacity-10 hover:bg-contrast p-2 rounded-lg">
                 <div className="p-3 rounded-full text-white mr-4">
-                  <img src={whatsapp} alt="WhatsApp" className="h-6 w-6" loading="lazy"/>
+                  <img
+                    src={whatsapp}
+                    alt="WhatsApp"
+                    className="h-6 w-6"
+                    loading="lazy"
+                  />
                 </div>
                 <div>
                   <h3 className="font-medium text-brown-text">Telefone</h3>
@@ -75,7 +85,12 @@ function Contact() {
                 className="flex items-center transition duration-300 hover:bg-opacity-10 hover:bg-contrast p-2 rounded-lg cursor-pointer"
               >
                 <div className="p-3 rounded-full text-white mr-4">
-                  <img src={instagram} alt="Instagram" className="h-6 w-6" loading="lazy"/>
+                  <img
+                    src={instagram}
+                    alt="Instagram"
+                    className="h-6 w-6"
+                    loading="lazy"
+                  />
                 </div>
                 <div>
                   <h3 className="font-medium text-brown-text">Instagram</h3>
@@ -97,9 +112,11 @@ function Contact() {
                 </label>
                 <input
                   type="text"
+                  id="nome"
                   name="from_name"
                   placeholder="Seu nome"
                   required
+                  autoComplete="name"
                   className="w-full px-4 py-2 border border-main rounded-md focus:outline-none focus:ring-2 focus:ring-logo focus:border-transparent"
                 />
               </div>
@@ -113,10 +130,12 @@ function Contact() {
                 </label>
                 <input
                   type="email"
+                  id="email"
                   name="reply_to"
                   placeholder="Seu e-mail"
                   className="w-full px-4 py-2 border border-main rounded-md focus:outline-none focus:ring-2 focus:ring-logo focus:border-transparent"
                   required
+                  autoComplete="email"
                 />
               </div>
 
@@ -128,11 +147,13 @@ function Contact() {
                   Mensagem
                 </label>
                 <textarea
+                  id="mensagem"
                   name="message"
                   placeholder="Escreva sua mensagem"
                   rows="5"
                   className="w-full px-4 py-2 border border-main rounded-md focus:outline-none focus:ring-2 focus:ring-logo focus:border-transparent"
                   required
+                  autoComplete="off"
                 ></textarea>
               </div>
 
