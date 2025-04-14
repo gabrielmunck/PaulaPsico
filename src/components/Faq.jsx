@@ -1,12 +1,33 @@
 import zoom from "../assets/zoom.svg";
 import googlemeet from "../assets/googlemeet.svg";
 import WhatsButton from "./WhatsButton";
+import { motion } from "framer-motion";
+import { fadeIn, slideInRight, staggerContainer } from "../animations/variants";
 
 function Faq() {
+  const cardVariant = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
   return (
     <div id="faq" className="flex flex-col lg:flex-row justify-center lg:space-x-20 lg:max-w-7xl w-full bg-background p-4 lg:p-16">
-      <div className="w-full lg:w-1/2 max-w-5xl z-10">
-        <div className="flex flex-col justify-center items-center w-full rounded-[80px] border-4 border-main p-8 mb-12">
+      <motion.div 
+        className="w-full lg:w-1/2 max-w-5xl z-10"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
+        <motion.div 
+          className="flex flex-col justify-center items-center w-full rounded-[80px] border-4 border-main p-8 mb-12"
+          variants={cardVariant}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+        >
           <p className="text-contrast font-lato text-center font-bold text-xl lg:text-2xl mb-2">
             Mas consultas online realmente funcionam?
           </p>
@@ -20,8 +41,13 @@ function Faq() {
             conforto e adesão ao tratamento, criando um espaço seguro para o
             autoconhecimento e a resolução de conflitos emocionais.
           </p>
-        </div>
-        <div className="flex flex-col justify-center items-center w-full rounded-[80px] border-4 border-main p-8 mb-12">
+        </motion.div>
+        
+        <motion.div 
+          className="flex flex-col justify-center items-center w-full rounded-[80px] border-4 border-main p-8 mb-12"
+          variants={cardVariant}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+        >
           <p className="text-contrast font-lato text-center font-bold text-xl lg:text-2xl mb-2">
             Referente Sigilo
           </p>
@@ -30,49 +56,113 @@ function Faq() {
             além de atender todas as regulamentações dos Conselhos Federais de
             Psicologia.
           </p>
-        </div>
-        <div className="flex flex-col justify-center items-center w-full rounded-[80px] border-4 border-main p-8 mb-12">
+        </motion.div>
+        
+        <motion.div 
+          className="flex flex-col justify-center items-center w-full rounded-[80px] border-4 border-main p-8 mb-12"
+          variants={cardVariant}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+        >
           <div className="flex justify-between space-x-5">
-            <img src={zoom} alt="Zoom Logo" className="w-8 h-8" loading="lazy" />
+            <motion.img 
+              src={zoom} 
+              alt="Zoom Logo" 
+              className="w-8 h-8" 
+              loading="lazy"
+              whileHover={{ scale: 1.2, rotate: 5 }}
+            />
             <p className="text-contrast font-lato text-center font-bold text-xl lg:text-2xl mb-2">
               Plataforma das Sessões
             </p>
-            <img src={googlemeet} alt="google meet logo" className="w-8 h-8" loading="lazy"/>
+            <motion.img 
+              src={googlemeet} 
+              alt="google meet logo" 
+              className="w-8 h-8" 
+              loading="lazy"
+              whileHover={{ scale: 1.2, rotate: -5 }}
+            />
           </div>
           <p className="tracking-tight leading-6 text-contrast font-lato text-justify font-extralight text-lg p-1 lg:px-8">
             Você pode escolher entre as principais ferramentas de videochamada
             disponíveis como Whatsapp, Zoom e Google Meet para o seu
             atendimento.
           </p>
-        </div>
-      </div>
-      <div className="w-full lg:w-1/2 max-w-5xl z-10">
-        <div className="flex flex-col justify-center items-center min-h-screen w-full rounded-[80px] border-4 border-main p-8 mb-6">
-          <p className="text-contrast font-lato text-center font-bold text-xl lg:text-2xl mb-8">
+        </motion.div>
+      </motion.div>
+      
+      <motion.div 
+        className="w-full lg:w-1/2 max-w-5xl z-10"
+        variants={slideInRight}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
+        <motion.div 
+          className="flex flex-col justify-center items-center min-h-screen w-full rounded-[80px] border-4 border-main p-8 mb-6"
+          whileHover={{ scale: 1.01, transition: { duration: 0.3 } }}
+        >
+          <motion.p 
+            className="text-contrast font-lato text-center font-bold text-xl lg:text-2xl mb-8"
+            variants={fadeIn}
+          >
             Tipos de tratamentos disponiveis
-          </p>
-          <div className="grid grid-cols-1 gap-4 text-contrast font-lato">
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Promoção e prevenção saúde mental</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Ansiedade</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Ataque de pânico</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Fobias</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Dificuldade na tomada de decisões</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Estresse</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Insatisfação profissional</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Alterações do humor</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Depressão</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Transtorno Bipolar</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Questões relacionados a autoestima</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Situação de luto</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Dependência química</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Dificuldades no relacionamento</p>
-            <p className="flex items-center"><span className="text-main mr-2">✓</span> Transtorno de personalidade</p>
-            <p className="flex items-center mb-4"><span className="text-main mr-2">✓</span> Perda de peso</p>
-            <WhatsButton/>
-          </div>
+          </motion.p>
           
-        </div>
-      </div>
+          
+          <div className="grid grid-cols-1 gap-4 text-contrast font-lato">
+            {[
+              "Promoção e prevenção saúde mental",
+              "Ansiedade",
+              "Ataque de pânico",
+              "Fobias",
+              "Dificuldade na tomada de decisões",
+              "Estresse",
+              "Insatisfação profissional",
+              "Alterações do humor",
+              "Depressão",
+              "Transtorno Bipolar",
+              "Questões relacionados a autoestima",
+              "Situação de luto",
+              "Dependência química",
+              "Dificuldades no relacionamento",
+              "Transtorno de personalidade",
+              "Perda de peso"
+            ].map((item, index) => (
+              <motion.p 
+                key={index} 
+                className="flex items-center"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ 
+                  opacity: 1, 
+                  x: 0,
+                  transition: { 
+                    duration: 0.3, 
+                    delay: Math.min(index * 0.03, 0.5) 
+                  }
+                }}
+                viewport={{ once: true }}
+                whileHover={{ x: 5, color: "#6D4534", transition: { duration: 0.2 } }}
+              >
+                <span className="text-main mr-2">✓</span> {item}
+              </motion.p>
+            ))}
+            
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ 
+                opacity: 1, 
+                scale: 1,
+                transition: { duration: 0.5, delay: 0.2 } 
+              }}
+              viewport={{ once: true }}
+              whileHover={{ scale: 1.05 }}
+            >
+              <WhatsButton />
+            </motion.div>
+          </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 }

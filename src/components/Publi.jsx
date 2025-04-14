@@ -18,14 +18,14 @@ function Publi() {
             Sua saúde mental é tão importante quanto a sua saúde física.
           </p>
           <p className="text-contrast font-lato text-center font-extralight text-lg mb-6">
-            Tenha sua consulta marcada em apenas alguns cliques{" "}
+            Tenha sua consulta marcada em apenas alguns cliques.
           </p>
           <WhatsButton />
           <p className="text-contrast tracking-wide font-lato text-center font-bold text-lg mb-8">
             CONSULTAS PRESENCIAIS E ONLINE
           </p>
           <p className="text-contrast tracking-wide font-lato text-center font-extralight text-lg mb-8">
-            Atendimento para crianças, adolescentes, adultos e casal{" "}
+            Atendimento para crianças, adolescentes, adultos e casal.
           </p>
         </div>
       </div>

@@ -2,6 +2,8 @@ import image1 from "../assets/imagem1.png";
 import image2 from "../assets/imagem2.png";
 import image3 from "../assets/imagem3.png";
 import image4 from "../assets/imagem4.png";
+import { motion } from "framer-motion";
+import { fadeIn, slideUp, staggerContainer } from "../animations/variants";
 
 function Services() {
   const services = [
@@ -37,7 +39,13 @@ function Services() {
 
   return (
     <div id="servicos" className="min-h-screen w-full bg-background flex flex-col items-center py-8">
-      <div className="w-full flex flex-col items-center justify-center max-w-[1600px] mb-10 px-4 md:px-32">
+      <motion.div 
+        className="w-full flex flex-col items-center justify-center max-w-[1600px] mb-10 px-4 md:px-32"
+        variants={fadeIn}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.3 }}
+      >
         <h1 className="w-full font-lato font-bold md:font-light text-center text-3xl md:text-5xl mb-8">
           Serviços
         </h1>
@@ -46,24 +54,31 @@ function Services() {
           psicoterapia individual e online, orientação de pais e diagnósticos
           baseados no metodo ABA.
         </p>
-      </div>
+      </motion.div>
 
-      <div className="w-full bg-main py-8 space-y-8">
+      <motion.div 
+        className="w-full bg-main py-8 space-y-8"
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+      >
         {services.map((service) => (
-          <div
+          <motion.div
             key={service.id}
             className="flex flex-col justify-center lg:flex-row px-4 md:px-32 overflow-hidden hover:bg-white transition-colors duration-300"
+            variants={slideUp}
+            whileHover={{ y: -5, transition: { duration: 0.2 } }}
           >
-            
             <div className="lg:w-1/3 h-60 px-10 py-3">
-              <img
+              <motion.img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover rounded-3xl"
                 loading="lazy"
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
               />
             </div>
-
             
             <div className="lg:w-2/3 max-w-[750px] p-6 flex flex-col justify-center">
               <h2 className="font-lato text-2xl lg:text-4xl text-contrast font-bold mb-3">
@@ -73,11 +88,9 @@ function Services() {
                 {service.description}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-
-
+      </motion.div>
     </div>
   );
 }
