@@ -1,5 +1,5 @@
-import Aboutbg from "../assets/AboutBg.png";
-import PaulaPsico from "../assets/PaulaPsico.png";
+import Aboutbg from "../assets/AboutBg.webp";
+import PaulaPsico from "../assets/PaulaPsico.webp";
 import { motion } from "framer-motion";
 import { fadeIn, scaleIn } from "../animations/variants";
 

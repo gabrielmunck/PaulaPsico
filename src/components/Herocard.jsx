@@ -1,4 +1,4 @@
-import paulaPsico from "../assets/PaulaPsico.png";
+import paulaPsico from "../assets/PaulaPsico.webp";
 import { motion } from "framer-motion";
 import { slideInLeft, slideInRight } from "../animations/variants";
 

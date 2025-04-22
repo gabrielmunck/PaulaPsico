@@ -1,7 +1,7 @@
-import image1 from "../assets/imagem1.png";
-import image2 from "../assets/imagem2.png";
-import image3 from "../assets/imagem3.png";
-import image4 from "../assets/imagem4.png";
+import image1 from "../assets/imagem1.webp";
+import image2 from "../assets/imagem2.webp";
+import image3 from "../assets/imagem3.webp";
+import image4 from "../assets/imagem4.webp";
 import { motion } from "framer-motion";
 import { fadeIn, slideUp, staggerContainer } from "../animations/variants";
 
