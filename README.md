@@ -56,4 +56,4 @@ npm start
 
 ## 📝 Licença
 
-Este projeto está sob a licença MIT. Veja mais em [LICENSE](./LICENSE).
+Este projeto está licenciado sob os termos da **GNU General Public License v3.0**. Para mais informações, consulte o arquivo [LICENSE](LICENSE).
